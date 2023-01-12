@@ -1,0 +1,32 @@
+﻿@inherits LayoutComponentBase
+@using BlazorApp1.Localization.AdminLayout;
+@using System.Globalization;
+@inject IStringLocalizer<Resource> localizer
+
+<div class="page">
+    <div class="row">
+        <div class="col">
+            <ul class="list-group list-group-horizontal">
+                <li class="list-group-item">
+                    <NavLink class="nav-link" href="">
+                        <span class="oi oi-home" aria-hidden="true"></span> @localizer["home"]
+                    </NavLink>
+                </li>
+                <li class="list-group-item">
+                    <NavLink class="nav-link" href="/admindetails/item">
+                        <span class="oi oi-box" aria-hidden="true"></span> @localizer["item"]
+                    </NavLink>
+                </li>
+            </ul> 
+        </div>
+    </div>
+    <main>
+         <div class="row">
+            <div class="col">
+                <article class="content px-4">
+                    @Body
+                </article>
+            </div>
+         </div>
+    </main>
+</div>

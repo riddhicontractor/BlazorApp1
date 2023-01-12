@@ -1,0 +1,14 @@
+﻿@using BlazorApp1.Localization.MainLayout;
+@using System.Globalization;
+@inject IStringLocalizer<Resource> localizer
+
+<strong>@localizer["culture"]:</strong>
+<select class="form-control" @bind="Culture" style="width:300px; margin-left:10px;">
+    @foreach (var culture in cultures)
+    {
+        <option value="@culture">@culture.DisplayName</option>
+    }
+    @*    <option value="de-DE">German</option>
+    <option value="en-US">English</option>
+    <option value="es-ES">Spanish</option>*@
+</select>

@@ -1,0 +1,9 @@
+﻿@page "/admindetails/admin"
+@layout Layouts.Admin.AdminLayout
+@using BlazorApp1.Localization.Admin;
+@using System.Globalization;
+@inject IStringLocalizer<Resource> localizer
+
+<PageTitle>Admin Page</PageTitle>
+
+<h1>@localizer["adminpage"]</h1>

@@ -1,0 +1,10 @@
+﻿@page "/"
+@using BlazorApp1.Localization.Index;
+@using System.Globalization;
+@inject IStringLocalizer<Resource> localizer
+
+<PageTitle>Index</PageTitle>
+
+<h1>@localizer["helloworld"]</h1>
+
+<h4>@localizer["welcome"]</h4>
