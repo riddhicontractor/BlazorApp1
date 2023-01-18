@@ -72,9 +72,9 @@ namespace BlazorApp1.Localization.Index {
         /// <summary>
         ///   Looks up a localized string similar to Navigate in new tab.
         /// </summary>
-        public static string Navigate_in_new_tab {
+        public static string Navigateinnewtab {
             get {
-                return ResourceManager.GetString("Navigate in new tab", resourceCulture);
+                return ResourceManager.GetString("Navigateinnewtab", resourceCulture);
             }
         }
         
